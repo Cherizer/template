@@ -1,0 +1,19 @@
+// common imports
+@import './_colors';
+@import './_fonts';
+@import './_typography';
+@import './_responsive_mixin';
+
+h1 {
+    @include responsive_mobile() {
+        color: $label_blue;
+    }
+
+    @include responsive_tab() {
+        color: $dark_bg;
+    }
+
+    @include responsive(350,1200) {
+        color: $primary_light;
+    }
+}
